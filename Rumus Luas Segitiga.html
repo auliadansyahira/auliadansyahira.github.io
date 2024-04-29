@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Luas Segitiga</title>
+<style>
+                input.btn
+                                  {color: black;
+                                background: white;
+                                border: 1px outset orange;
+                                font-family: "calibri", Times, serif;
+                                font-size: 16px;
+                                font-weight: bold;
+                                width : auto;}
+                  </style>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="images/13.jpg"
+<body>
+<center><br></br><br></br><br></br>
+<b><font color="white" size="6">
+<p>Luas Segitiga</p>
+<form id="Formulir" name="formulir" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="178"><b><font color="white" size="5">Masukkan alas</td>
+                <td><input name="alas" type="text" id="alas"></td>
+                </tr>
+                <tr>
+                    <td width="178"><b><font color="white" size="5">Masukkan tinggi</td>
+                        <td><input name="tinggi" type="text" id="tinggi"></td>
+                        </tr>
+                        <tr>
+                        <td><b><font color="white" size="5">Hasil Luas</td>
+                        <td><input name="luas" type="text" id="luas"></td>
+                        </tr>
+        </table>
+        <p>
+        <input name="cari" type="button" id="cari" value="hitung" class="btn"
+        onclick="cariluas()"/>
+        </p>
+        </form>
+        <p>&nbsp;</p>
+        <script laguage="javascript">
+        function cariluas()
+        {
+        alas=formulir.alas.value;
+        tinggi=formulir.tinggi.value;
+        formulir.luas.value=0.5*alas*tinggi;
+        }
+        </script>
+</body>
+</html>
